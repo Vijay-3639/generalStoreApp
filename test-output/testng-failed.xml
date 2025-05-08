@@ -5,7 +5,7 @@
     <classes>
       <class name="appiumTest.AppiumFirstApp.eCommerce_TC_1">
         <methods>
-          <include name="test"/>
+          <include name="addToCart"/>
           <include name="configureAppium"/>
         </methods>
       </class> <!-- appiumTest.AppiumFirstApp.eCommerce_TC_1 -->

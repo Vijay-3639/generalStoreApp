@@ -25,8 +25,8 @@ public class BaseClass {
 	@BeforeClass
 	public void configureAppium() throws MalformedURLException, URISyntaxException {
 		
-		appiumServiceBuilder = new AppiumServiceBuilder().withAppiumJS( new File("\\Users\\vijay.LAPTOP-CCJ7C4DN\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js")).withIPAddress("127.0.0.1").usingPort(4723).build();
-		appiumServiceBuilder.start();
+//		appiumServiceBuilder = new AppiumServiceBuilder().withAppiumJS( new File("\\Users\\vijay.LAPTOP-CCJ7C4DN\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js")).withIPAddress("127.0.0.1").usingPort(4723).build();
+//		appiumServiceBuilder.start();
 		
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Pixel 7a API 36");
@@ -39,7 +39,7 @@ public class BaseClass {
 	//@AfterClass
 	public void stopSession() {
 		driver.quit();
-		appiumServiceBuilder.stop();
+		//appiumServiceBuilder.stop();
 	}
 	
 }

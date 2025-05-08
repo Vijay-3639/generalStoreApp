@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-07T08:46:38 IST" name="Default suite" finished-at="2025-05-07T08:47:45 IST" duration-ms="67367">
+  <suite started-at="2025-05-08T08:19:10 IST" name="Default suite" finished-at="2025-05-08T08:19:58 IST" duration-ms="48514">
     <groups>
     </groups>
-    <test started-at="2025-05-07T08:46:38 IST" name="Default test" finished-at="2025-05-07T08:47:45 IST" duration-ms="67367">
+    <test started-at="2025-05-08T08:19:10 IST" name="Default test" finished-at="2025-05-08T08:19:58 IST" duration-ms="48514">
       <class name="appiumTest.AppiumFirstApp.eCommerce_TC_1">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:appiumTest.AppiumFirstApp.eCommerce_TC_1@c730b35]" started-at="2025-05-07T08:46:38 IST" name="configureAppium" finished-at="2025-05-07T08:46:55 IST" duration-ms="17553" status="PASS">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:appiumTest.AppiumFirstApp.eCommerce_TC_1@292b08d6]" started-at="2025-05-08T08:19:10 IST" name="configureAppium" finished-at="2025-05-08T08:19:21 IST" duration-ms="11196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="test()[pri:0, instance:appiumTest.AppiumFirstApp.eCommerce_TC_1@c730b35]" started-at="2025-05-07T08:46:55 IST" name="test" finished-at="2025-05-07T08:47:45 IST" duration-ms="49755" status="PASS">
+        <test-method signature="addToCart()[pri:0, instance:appiumTest.AppiumFirstApp.eCommerce_TC_1@292b08d6]" started-at="2025-05-08T08:19:21 IST" name="addToCart" finished-at="2025-05-08T08:19:58 IST" duration-ms="37257" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
+        </test-method> <!-- addToCart -->
       </class> <!-- appiumTest.AppiumFirstApp.eCommerce_TC_1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
