@@ -12,7 +12,7 @@ import io.appium.java_client.AppiumBy;
 
 public class eCommerce_TC_1 extends BaseClass{
 	
-	//@Test	
+	@Test	
 	public void fillForm() throws InterruptedException {
 		
 		driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Rashmika");
@@ -26,7 +26,7 @@ public class eCommerce_TC_1 extends BaseClass{
 		
 	}
 	
-	//@Test
+	@Test
 	public void toastMessageCheck() throws InterruptedException {
 		
 		driver.findElement(By.xpath("//android.widget.RadioButton[@text='Male']")).click();
