@@ -1,93 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2025-06-01T17:18:23 IST" name="Suite" finished-at="2025-06-01T17:20:37 IST" duration-ms="133690">
-    <groups>
-    </groups>
-    <test started-at="2025-06-01T17:18:23 IST" name="Test" finished-at="2025-06-01T17:20:37 IST" duration-ms="133690">
-      <class name="appiumTest.AppiumFirstApp.productsTest">
-        <test-method signature="Test2()[pri:0, instance:appiumTest.AppiumFirstApp.productsTest@61322f9d]" started-at="2025-06-01T17:20:10 IST" name="Test2" finished-at="2025-06-01T17:20:37 IST" duration-ms="26380" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [cd7b28b1-0883-47b2-92ed-48df7e7098d7, findElement {using=xpath, value=//android.widget.TextView[@text='Air Jordan 9 Retro']//parent::android.widget.LinearLayout//android.widget.TextView[@text='ADD TO CART']}]
-Capabilities {appium:app: \Users\vijay.LAPTOP-CCJ7C4D..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: \Users\vijay.LAPTOP-CCJ7C4D..., automationName: UIAutomator2, deviceName: Pixel 7a API 36, platformName: ANDROID}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 118, appium:takesScreenshot: true, appium:viewportRect: {height: 2282, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: cd7b28b1-0883-47b2-92ed-48df7e7098d7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [cd7b28b1-0883-47b2-92ed-48df7e7098d7, findElement {using=xpath, value=//android.widget.TextView[@text='Air Jordan 9 Retro']//parent::android.widget.LinearLayout//android.widget.TextView[@text='ADD TO CART']}]
-Capabilities {appium:app: \Users\vijay.LAPTOP-CCJ7C4D..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: \Users\vijay.LAPTOP-CCJ7C4D..., automationName: UIAutomator2, deviceName: Pixel 7a API 36, platformName: ANDROID}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 16, appium:statBarHeight: 118, appium:takesScreenshot: true, appium:viewportRect: {height: 2282, left: 0, top: 118, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: cd7b28b1-0883-47b2-92ed-48df7e7098d7
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at pageObjects.andoid.productsPage.addProductToCart(productsPage.java:18)
-at appiumTest.AppiumFirstApp.productsTest.Test2(productsTest.java:10)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test2 -->
-      </class> <!-- appiumTest.AppiumFirstApp.productsTest -->
-      <class name="appiumTest.AppiumFirstApp.cartTest">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:appiumTest.AppiumFirstApp.cartTest@279fedbd]" started-at="2025-06-01T17:18:23 IST" name="configureAppium" finished-at="2025-06-01T17:18:55 IST" duration-ms="32273" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configureAppium -->
-        <test-method signature="cartPriceValidation()[pri:0, instance:appiumTest.AppiumFirstApp.cartTest@279fedbd]" started-at="2025-06-01T17:18:55 IST" name="cartPriceValidation" finished-at="2025-06-01T17:19:36 IST" duration-ms="40908" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Can't locate an element by this strategy: By.id: cartPriceElement]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: cartPriceElement
+<!-- Generated by org.testng.reporters.JUnitReportReporter -->
+<testsuite hostname="LAPTOP-CCJ7C4DN" failures="0" tests="2" name="appiumTest.AppiumFirstApp.cartTest" time="60.944" errors="2" timestamp="2025-06-01T17:20:37 IST" skipped="0">
+  <testcase classname="appiumTest.AppiumFirstApp.cartTest" name="cartPriceValidation" time="40.908">
+    <error message="Can&#039;t locate an element by this strategy: By.id: cartPriceElement" type="org.openqa.selenium.NoSuchElementException">
+      <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: cartPriceElement
 at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
 at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:64)
 at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
@@ -158,18 +74,11 @@ at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
 ... 33 more
 ]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cartPriceValidation -->
-        <test-method signature="test3()[pri:0, instance:appiumTest.AppiumFirstApp.cartTest@279fedbd]" started-at="2025-06-01T17:19:36 IST" name="test3" finished-at="2025-06-01T17:19:56 IST" duration-ms="20036" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Can't locate an element by this strategy: By.id: termsElement]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: termsElement
+    </error>
+  </testcase> <!-- cartPriceValidation -->
+  <testcase classname="appiumTest.AppiumFirstApp.cartTest" name="test3" time="20.036">
+    <error message="Can&#039;t locate an element by this strategy: By.id: termsElement" type="org.openqa.selenium.NoSuchElementException">
+      <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.id: termsElement
 at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
 at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:64)
 at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
@@ -240,18 +149,6 @@ at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
 ... 33 more
 ]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-      </class> <!-- appiumTest.AppiumFirstApp.cartTest -->
-      <class name="appiumTest.AppiumFirstApp.formTest">
-        <test-method signature="Test1()[pri:0, instance:appiumTest.AppiumFirstApp.formTest@65e98b1c]" started-at="2025-06-01T17:19:56 IST" name="Test1" finished-at="2025-06-01T17:20:10 IST" duration-ms="14011" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test1 -->
-      </class> <!-- appiumTest.AppiumFirstApp.formTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
-</testng-results>
+    </error>
+  </testcase> <!-- test3 -->
+</testsuite> <!-- appiumTest.AppiumFirstApp.cartTest -->
