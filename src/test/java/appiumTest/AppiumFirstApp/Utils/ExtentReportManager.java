@@ -1,4 +1,4 @@
-package Utilities;
+package appiumTest.AppiumFirstApp.Utils	;
 
 import java.io.IOException;
 
@@ -13,7 +13,6 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import appiumTest.AppiumFirstApp.BaseClass;
-import testClasses.baseClass;
 
 public class ExtentReportManager implements ITestListener
 {

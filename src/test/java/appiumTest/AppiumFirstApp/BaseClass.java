@@ -3,7 +3,6 @@ package appiumTest.AppiumFirstApp;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
@@ -14,6 +13,8 @@ import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.annotations.BeforeTest;
@@ -41,7 +42,7 @@ public class BaseClass {
 	public static productsPage productsPOM;
 
 	@BeforeTest
-	public void configureAppium() throws MalformedURLException, URISyntaxException {
+	public void configureAppium() throws URISyntaxException, IOException {
 
 		appiumServiceBuilder = new AppiumServiceBuilder().withAppiumJS(new File(
 				"\\Users\\vijay.LAPTOP-CCJ7C4DN\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
